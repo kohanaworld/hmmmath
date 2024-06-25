@@ -9,7 +9,7 @@
     </target>
 
     <target name="prepare">
-        <get src="http://getcomposer.org/composer.phar" dest="build/composer.phar"/>
+        <get src="https://getcomposer.org/composer.phar" dest="build/composer.phar"/>
         <exec executable="php" failonerror="true">
             <arg value="build/composer.phar"/>
             <arg value="install"/>

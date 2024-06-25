@@ -31,7 +31,7 @@ final class GreatestCommonDivisor
         do {
             $right = array_shift($numbers);
 
-            if (is_infinite($right)) {
+            if (is_infinite((float) $right)) {
                 return INF;
             }
 
