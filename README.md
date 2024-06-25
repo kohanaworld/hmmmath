@@ -1,6 +1,6 @@
 # hmmmath
 
-![Test](https://github.com/lstrojny/hmmmath/workflows/Test/badge.svg)
+[![Test](https://github.com/kohanaworld/hmmmath/actions/workflows/test.yaml/badge.svg)](https://github.com/kohanaworld/hmmmath/actions/workflows/test.yaml)
 
 Delicious math component for PHP
 
