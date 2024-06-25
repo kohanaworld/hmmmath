@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit backupGlobals="false"
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         backupGlobals="false"
          convertErrorsToExceptions="true"
          convertWarningsToExceptions="true"
          convertNoticesToExceptions="true"
-         bootstrap="vendor/autoload.php"
-         verbose="true"
-         colors="true"
-         timeoutForLargeTests="100">
-
-    <testsuites>
-        <testsuite name="kohanaworld/hmmmath">
-            <directory>./tests/</directory>
-        </testsuite>
-    </testsuites>
-
-    <logging>
-        <log type="coverage-html" target="build/coverage" lowUpperBound="35" highLowerBound="70"/>
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
-        <log type="junit" target="build/logs/junit.xml" />
-    </logging>
-
-    <php>
-        <ini name="error_reporting" value="-1"/>
-    </php>
-
-    <filter>
-        <whitelist>
-            <directory suffix=".php">src/</directory>
-        </whitelist>
-    </filter>
+         bootstrap="vendor/autoload.php" verbose="true"
+         colors="true" timeoutForLargeTests="100"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage>
+    <include>
+      <directory suffix=".php">src/</directory>
+    </include>
+    <report>
+      <clover outputFile="build/logs/clover.xml"/>
+      <html outputDirectory="build/coverage" lowUpperBound="35" highLowerBound="70"/>
+    </report>
+  </coverage>
+  <testsuites>
+    <testsuite name="kohanaworld/hmmmath">
+      <directory>./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <junit outputFile="build/logs/junit.xml"/>
+  </logging>
+  <php>
+    <ini name="error_reporting" value="-1"/>
+  </php>
 </phpunit>
