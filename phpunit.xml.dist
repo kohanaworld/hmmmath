@@ -9,7 +9,7 @@
          timeoutForLargeTests="100">
 
     <testsuites>
-        <testsuite name="lstrojny/hmmmath">
+        <testsuite name="kohanaworld/hmmmath">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
