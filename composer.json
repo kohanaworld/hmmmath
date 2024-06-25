@@ -1,11 +1,15 @@
 {
-    "name": "lstrojny/hmmmath",
-    "description": "Collection of math related PHP functions",
+    "name": "kohanaworld/hmmmath",
+    "description": "Collection of math related PHP functions (PHP >=7.2 <=8.3",
     "license": "MIT",
     "authors": [
         {
             "name": "Lars Strojny",
             "email": "lars@strojny.net"
+        },
+        {
+            "name": "Kohana World Team",
+            "email": "ga@koseven@ga"
         }
     ],
     "autoload": {
