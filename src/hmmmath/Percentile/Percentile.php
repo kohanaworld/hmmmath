@@ -19,7 +19,7 @@ final class Percentile
         string $mode = self::NEAREST_RANK,
         bool $sort = true
     ): float {
-        InvalidArgumentException::assertParameterType('2', 'double', $percentile, '0..1');
+        InvalidArgumentException::assertParameterType(2, 'double', $percentile, '0..1');
 
         if ($sort) {
             sort($numbers);

@@ -3,8 +3,8 @@ namespace hmmmath\Fibonacci;
 
 class FibonacciNumber
 {
-    private $start;
-    private $increment;
+    private int $start;
+    private int $increment;
 
     public function __construct(int $start, int $increment)
     {

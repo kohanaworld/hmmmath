@@ -3,7 +3,7 @@ namespace hmmmath\Exception;
 
 use InvalidArgumentException as BaseBadMethodCallException;
 
-class BadMethodCallException extends BaseBadMethodCallException
+final class BadMethodCallException extends BaseBadMethodCallException
 {
     public static function invalidMethod(string $className, string $methodName): self
     {
